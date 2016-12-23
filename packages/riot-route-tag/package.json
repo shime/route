@@ -1,0 +1,27 @@
+{
+  "name": "riot-route-tag",
+  "version": "3.0.2",
+  "description": "Tag-based router for Riot.js",
+  "main": "cjs.route-tag.js",
+  "jsnext:main": "index.js",
+  "files": [
+    "index.js",,
+    "route-tag.js",
+    "route-tag.min.js"
+    "cjs.route-tag.js",
+    "amd.route-tag.js",
+    "amd.route-tag.min.js"
+  ],
+  "keywords": [
+    "riot",
+    "router"
+  ],
+  "dependencies": {
+    "riot-route": "^3.0.2"
+  },
+  "author": "Riot.js contributors",
+  "license": "MIT",
+  "repository": "riot/route",
+  "bugs": "https://github.com/riot/route/issues",
+  "homepage": "http://riotjs.com/api/route/"
+}
