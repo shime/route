@@ -7,13 +7,15 @@
   </head>
 
   <body>
-    <script src="../dist/route.js"></script>
-     <a href="#hi/there">hi</a>
+    <script src="../node_modules/riot/riot+compiler.js"></script>
+    <script src="../packages/riot-route-tag/route-tag.js"></script>
+    <script data-src="tags/param.tag" type="riot/tag"></script>
+    <a href="#apple">Apple</a>
+    <a href="#banana">Banana</a>
+    <a href="#coffee">Coffee</a>
+    <app></app>
     <script>
-      route(function(path) {
-        console.log('path=%s', path)
-      })
-      route.start(true)
+      riot.mount('app', 'param')
     </script>
   </body>
 

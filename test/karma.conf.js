@@ -12,7 +12,7 @@ module.exports = function(config) {
 
   config.set({
     basePath: '',
-    frameworks: ['mocha'],
+    frameworks: ['mocha', 'riot'],
     plugins: [
       'karma-mocha',
       'karma-mocha-reporter',
@@ -24,14 +24,16 @@ module.exports = function(config) {
     files: [
       '../node_modules/expect.js/index.js',
       '../node_modules/riot/riot.js',
-      '../packages/riot-route/route.js',
+      '../packages/riot-route-tag/route-tag.js',
       'tags/*.tag',
-      'specs/core.specs.js'
+      'specs/core.specs.js',
+      'specs/tag.specs.js'
     ],
     browsers: browsers,
     customLaunchers: customLaunchers,
     reporters: ['mocha', 'coverage'],
     preprocessors: {
+      'tags/*.tag': ['riot'],
       '../packages/riot-route-tag/route-tag.js': ['coverage']
     },
     coverageReporter: {
