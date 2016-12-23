@@ -6,4 +6,4 @@ ratings:
   paths:
   - "lib/index.js"
 exclude_paths:
-  - "dist/**"
+  - "packages/**"

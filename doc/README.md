@@ -7,7 +7,7 @@ However we have developed and maintain `riot-route`, a small router library that
 If you want to use `riot-route` in your project you just need to include it either adding via `<script>` tag:
 
 ```html
-<script src="path/to/dist/route.js"></script>
+<script src="path/to/route.js"></script>
 ```
 
 Or if you are using es6 syntax you could do:

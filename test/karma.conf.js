@@ -18,18 +18,21 @@ module.exports = function(config) {
       'karma-mocha-reporter',
       'karma-coverage',
       'karma-browserstack-launcher',
-      'karma-electron'
+      'karma-electron',
+      'karma-riot'
     ],
     files: [
       '../node_modules/expect.js/index.js',
-      '../dist/route.js',
+      '../node_modules/riot/riot.js',
+      '../packages/riot-route/route.js',
+      'tags/*.tag',
       'specs/core.specs.js'
     ],
     browsers: browsers,
     customLaunchers: customLaunchers,
     reporters: ['mocha', 'coverage'],
     preprocessors: {
-      '../dist/route.js': ['coverage']
+      '../packages/riot-route-tag/route-tag.js': ['coverage']
     },
     coverageReporter: {
       dir: '../coverage/',

@@ -1,0 +1,27 @@
+{
+  "name": "riot-route",
+  "version": "3.0.2",
+  "description": "Simple isomorphic router",
+  "main": "cjs.route.js",
+  "jsnext:main": "index.js",
+  "files": [
+    "index.js",,
+    "route.js",
+    "route.min.js"
+    "cjs.route.js",
+    "amd.route.js",
+    "amd.route.min.js"
+  ],
+  "keywords": [
+    "riot",
+    "router"
+  ],
+  "dependencies": {
+    "riot-observable": "^3.0.0"
+  },
+  "author": "Riot.js contributors",
+  "license": "MIT",
+  "repository": "riot/route",
+  "bugs": "https://github.com/riot/route/issues",
+  "homepage": "http://riotjs.com/api/route/"
+}

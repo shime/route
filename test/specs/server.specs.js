@@ -1,4 +1,4 @@
-var route  = require('../../')
+var route  = require('../../packages/riot-route/cjs.route.js')
 var expect = require('expect.js')
 
 describe('Server-side specs', function() {

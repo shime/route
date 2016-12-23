@@ -1,21 +1,16 @@
 {
-  "name": "riot-route",
+  "name": "riot-route-build",
+  "private": true,
   "version": "3.0.2",
   "description": "Simple isomorphic router",
-  "main": "dist/cjs.route.js",
-  "jsnext:main": "lib/index.js",
-  "directories": {
-    "lib": "lib",
-    "doc": "doc"
-  },
   "scripts": {
     "pretest": "npm run build",
     "test": "npm run eslint && npm run karma && npm run mocha",
     "prepublish": "npm run build",
     "build": "npm run rollup && npm run uglify && npm run uglify-amd",
     "rollup": "node rollup.js",
-    "uglify": "uglifyjs dist/route.js --comments --mangle -o dist/route.min.js",
-    "uglify-amd": "uglifyjs dist/amd.route.js --comments --mangle -o dist/amd.route.min.js",
+    "uglify": "uglifyjs packages/riot-route/route.js --comments --mangle -o packages/riot-route/route.min.js",
+    "uglify-amd": "uglifyjs packages/riot-route/amd.route.js --comments --mangle -o packages/riot-route/amd.route.min.js",
     "watch": "chokidar lib/* lib/**/* -c 'npm run build'",
     "eslint": "eslint lib test/specs",
     "karma": "karma start test/karma.conf.js",
@@ -23,14 +18,6 @@
     "mocha": "mocha test/specs/server.specs.js",
     "coveralls": "RIOT_COV=1 cat ./coverage/lcov.info ./coverage/report-lcov/lcov.info | coveralls"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/riot/route.git"
-  },
-  "keywords": [
-    "riot",
-    "router"
-  ],
   "dependencies": {
     "riot-observable": "^3.0.0"
   },
@@ -48,14 +35,14 @@
     "karma-mocha-reporter": "^2.2.1",
     "mocha": "^3.1.2",
     "rollup": "^0.36.3",
+    "rollup-plugin-alias": "^1.2.0",
     "rollup-plugin-buble": "^0.14.0",
     "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-riot": "^1.1.0",
     "uglify-js": "^2.7.4"
   },
   "author": "Muut, Inc. and other contributors",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/riot/route/issues"
-  },
-  "homepage": "https://github.com/riot/route#readme"
+  "bugs": "https://github.com/riot/route/issues",
+  "homepage": "http://riotjs.com/api/route/"
 }

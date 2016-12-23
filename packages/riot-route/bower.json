@@ -1,0 +1,12 @@
+{
+  "name": "riot-route",
+  "main": "route.js",
+  "homepage": "http://riotjs.com/api/route/",
+  "authors": ["Muut, Inc. and other contributors"],
+  "description": "Simple client-side router",
+  "keywords": [
+    "riot",
+    "router"
+  ],
+  "license": "MIT"
+}

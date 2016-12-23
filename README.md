@@ -27,9 +27,9 @@ We have 4 editions:
 
 edition | target | file | via
 :-- | :-- | :-- | :--
-**Standalone** | `<script>` tag | `dist/route.min.js` | [jsdelivr](https://www.jsdelivr.com/?query=riot-route) ⋅ Bower ⋅ [download](https://raw.githubusercontent.com/riot/route/master/dist/route.min.js)
-**AMD** | [RequireJS](http://requirejs.org/) | `dist/amd.route.min.js` | [jsdelivr](https://www.jsdelivr.com/?query=riot-route) ⋅ Bower ⋅ [download](https://raw.githubusercontent.com/riot/route/master/dist/amd.route.min.js)
-**CommonJS** | [Browserify](http://browserify.org/), [webpack](https://webpack.github.io/) | `dist/cjs.route.js` | [npm](https://www.npmjs.com/package/riot-route)
+**Standalone** | `<script>` tag | `route.min.js` | [jsdelivr](https://www.jsdelivr.com/?query=riot-route) ⋅ Bower ⋅ [download](https://raw.githubusercontent.com/riot/route/master/packages/riot-route/route.min.js)
+**AMD** | [RequireJS](http://requirejs.org/) | `amd.route.min.js` | [jsdelivr](https://www.jsdelivr.com/?query=riot-route) ⋅ Bower ⋅ [download](https://raw.githubusercontent.com/riot/route/master/packages/riot-route/amd.route.min.js)
+**CommonJS** | [Browserify](http://browserify.org/), [webpack](https://webpack.github.io/) | `cjs.route.js` | [npm](https://www.npmjs.com/package/riot-route)
 **ES module** | [Rollup](http://rollupjs.org/) | `lib/index.js` | [npm](https://www.npmjs.com/package/riot-route)
 
 ### jsdelivr
@@ -54,8 +54,8 @@ $ bower install --save riot-route
 
 ### Download by yourself
 
-- [Standalone](https://raw.githubusercontent.com/riot/route/master/dist/route.min.js)
-- [AMD](https://raw.githubusercontent.com/riot/route/master/dist/amd.route.min.js)
+- [Standalone](https://raw.githubusercontent.com/riot/route/master/packages/riot-route/route.min.js)
+- [AMD](https://raw.githubusercontent.com/riot/route/master/packages/riot-route/amd.route.min.js)
 
 ## Usage
 
