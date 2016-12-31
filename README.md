@@ -4,14 +4,14 @@
 
 > Simple client-side router
 
-The Riot Router is the minimal router implementation with such technologies:
+The Riot Router is the minimal router implementation with the following technologies:
 
 - pushState and history API
 - multiple routing groups
 - replacable parser
 - compatible with IE9 and higher
 
-It started as a part of Riot.js, but now it becomes an independent library. It works with or without Riot.js.
+It started as a part of Riot.js, but it's an independent library now. It works with or without Riot.js.
 
 ## Table of Contents
 
